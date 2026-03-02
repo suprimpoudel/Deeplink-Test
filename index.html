@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Deep Link Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#0f172a;
+        color:white;
+        text-align:center;
+        padding:60px 20px;
+    }
+
+    h1{
+        margin-bottom:40px;
+    }
+
+    .btn{
+        display:block;
+        width:280px;
+        margin:15px auto;
+        padding:15px;
+        font-size:16px;
+        border-radius:8px;
+        text-decoration:none;
+        color:white;
+        background:#2563eb;
+        transition:0.2s;
+    }
+
+    .btn:hover{
+        background:#1d4ed8;
+    }
+
+    .note{
+        margin-top:40px;
+        color:#cbd5f5;
+        font-size:14px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Deep Link Test 🚀</h1>
+
+<a class="btn" href="https://suprimpoudel.com.np/omniuse">
+Open Universal Link
+</a>
+
+<a class="btn" href="omniuse://suprimpoudel.com.np">
+Open Deep Link
+</a>
+
+<button class="btn" onclick="openDeepLink()">
+Auto Open Deep Link
+</button>
+
+<p class="note">
+If the app is installed, it should open automatically.
+If not, nothing will happen or the browser will stay here.
+</p>
+
+<script>
+function openDeepLink() {
+    window.location.href = "omniuse://suprimpoudel.com.np";
+}
+</script>
+
+</body>
+</html>
